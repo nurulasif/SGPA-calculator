@@ -1,0 +1,65 @@
+gr=int(input("Group number:"))
+if gr==1:
+    print("Enter your marks out of 100")
+    marks[0]=Int(input("Mathematics-1:"))
+    marks[1]=Int(input("Computer Programming:"))
+    marks[2]=Int(input("Engineering Mechanics:"))
+    marks[3]=Int(input("Basic EEE:"))
+    marks[4]=Int(input("Ecology and Environment:"))
+    marks[5]=Int(input("Engineering Chemistry:"))
+    marks[6]=Int(input("Computer Programming Lab:"))
+    marks[7]=Int(input("Basic EEE Lab:"))
+    marks[8]=Int(input("Engineering Chemistry Lab:"))
+    for i in range(9):
+        m=marks[i]
+        if m>=90:
+            marks[i]=10
+        elif m>=80:
+            marks[i]=9
+        elif m>=70:
+            marks[i]=8
+        elif m>=60:
+            marks[i]=7
+        elif m>=50:
+            marks[i]=6
+        elif m>=35:
+            marks[i]=5
+        else:
+            marks[i]=0
+    cr=[4,3,3,3,2,3,2,2,1]
+    sgpa=0    
+    for i in range(9):
+        sgpa=sgpa+(marks[i]*(cr[i]/23))
+    print("SGPA=",sgpa)
+else gr==1:
+    print("Enter your marks out of 100")
+    marks[0]=Int(input("Mathematics-1:"))
+    marks[1]=Int(input("Computer Programming:"))
+    marks[2]=Int(input("Engineering Mechanics:"))
+    marks[3]=Int(input("Engineering Physics:"))
+    marks[4]=Int(input("Professional Communication:"))
+    marks[5]=Int(input("Computer Programming Lab:"))
+    marks[6]=Int(input("Engineering Graphics:"))
+    marks[7]=Int(input("Engineering Physics Lab:"))
+    marks[8]=Int(input("EAA:"))
+    for i in range(9):
+        m=marks[i]
+        if m>=90:
+            marks[i]=10
+        elif m>=80:
+            marks[i]=9
+        elif m>=70:
+            marks[i]=8
+        elif m>=60:
+            marks[i]=7
+        elif m>=50:
+            marks[i]=6
+        elif m>=35:
+            marks[i]=5
+        else:
+            marks[i]=0
+    cr=[4,3,3,3,3,2,3,1,1]
+    sgpa=0    
+    for i in range(9):
+        sgpa=sgpa+(marks[i]*(cr[i]/23))
+    print("SGPA=",sgpa)
