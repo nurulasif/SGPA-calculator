@@ -31,7 +31,7 @@ if gr==1:
     for i in range(9):
         sgpa=sgpa+(marks[i]*(cr[i]/23))
     print("SGPA=",sgpa)
-else gr==1:
+else:
     print("Enter your marks out of 100")
     marks[0]=Int(input("Mathematics-1:"))
     marks[1]=Int(input("Computer Programming:"))
